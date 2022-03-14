@@ -1,0 +1,97 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  background-color: #731dd8;
+  color: #eee;
+}
+.container {
+  display: flex;
+  position: relative;
+  z-index: 1;
+  top: 0;
+  margin: auto;
+  margin-top: 20%;
+  word-wrap: break-word;
+  justify-content: center;
+  align-items: center;
+}
+.container p {
+  font-size: 6rem;
+  padding-right: 0.5rem;
+  font-weight: bold;
+  letter-spacing: 0.1rem;
+  text-align: center;
+  overflow: hidden;
+}
+.container p span.typed-text {
+  font-weight: bold;
+  color: #ee4b6a;
+}
+.container p span.cursor {
+  display: inline-block;
+  background-color: #eafdf8;
+  margin-left: 0.1rem;
+  width: 3px;
+  animation: blink 1s infinite;
+}
+.container p span.cursor.typing {
+  animation: none;
+}
+
+p {
+  margin: 0;
+}
+
+section {
+  background: #731dd8;
+}
+
+.mountain {
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin: 0;
+  width: 100%;
+  overflow: visible;
+  line-height: 0;
+}
+
+.mountain svg {
+  position: relative;
+  display: flex;
+  width: 100%;
+  height: 100%;
+}
+
+.mountain .shape-fill {
+  fill: #731dd8;
+}
+
+.flip {
+  transform: rotate(180deg);
+}
+
+@keyframes blink {
+  0% {
+    background-color: #eafdf8;
+  }
+  49% {
+    background-color: #eafdf8;
+  }
+  50% {
+    background-color: transparent;
+  }
+  99% {
+    background-color: transparent;
+  }
+  100% {
+    background-color: #eafdf8;
+  }
+}
