@@ -8,31 +8,41 @@
 
 body {
   font-family: "Montserrat", sans-serif;
-  background-color: #731dd8;
+  background-color: #00cc99;
   color: #eee;
 }
 .container {
-  display: flex;
+  display: block;
   position: relative;
   z-index: 1;
-  top: 0;
   margin: auto;
-  margin-top: 20%;
   word-wrap: break-word;
   justify-content: center;
   align-items: center;
 }
 .container p {
-  font-size: 6rem;
+  font-size: 5rem;
   padding-right: 0.5rem;
-  font-weight: bold;
+  font-weight: normal;
   letter-spacing: 0.1rem;
   text-align: center;
   overflow: hidden;
+  height: 300px;
 }
+
+.container h1 {
+  font-size: 6rem;
+  padding-right: 0.5rem;
+  font-weight: bold;
+  letter-spacing: 0.4rem;
+  text-align: center;
+  overflow: hidden;
+  text-decoration: underline;
+}
+
 .container p span.typed-text {
   font-weight: bold;
-  color: #ee4b6a;
+  color: #ffee88;
 }
 .container p span.cursor {
   display: inline-block;
@@ -45,12 +55,25 @@ body {
   animation: none;
 }
 
-p {
-  margin: 0;
+.desc {
+  display: block;
+  position: relative;
+  text-align: center;
+  margin-top: 30%;
 }
 
-section {
-  background: #731dd8;
+.desc h1 {
+  font-size: 3rem;
+  font-weight: bold;
+  letter-spacing: 0.1rem;
+  overflow: hidden;
+  text-decoration: underline;
+}
+.desc p {
+  font-size: 2.5rem;
+  font-weight: normal;
+  letter-spacing: 0.1rem;
+  overflow: hidden;
 }
 
 .mountain {
@@ -59,7 +82,7 @@ section {
   left: 0;
   margin: 0;
   width: 100%;
-  overflow: visible;
+  overflow: hidden;
   line-height: 0;
 }
 
